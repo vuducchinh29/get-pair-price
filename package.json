@@ -1,0 +1,40 @@
+{
+  "name": "bsc-tools-services",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node app.js sample_config.yml",
+    "prod": "node app.js production_config.yml",
+    "postinstall": "patch-package",
+    "data": "node gen_data.js sample_config.yml"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bsc-tools/bsc-tools-services.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bsc-tools/bsc-tools-services/issues"
+  },
+  "homepage": "https://github.com/bsc-tools/bsc-tools-services#readme",
+  "dependencies": {
+    "@trop/async_router": "^0.2.0",
+    "@trop/gear": "^0.4.2",
+    "@trop/seed": "^0.2.0",
+    "abi-decoder": "^2.4.0",
+    "axios": "^0.21.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongodb": "^3.6.4",
+    "mongoose": "^6.0.12",
+    "node-telegram-bot-api": "^0.54.0",
+    "patch-package": "^6.4.5",
+    "untildify": "^4.0.0",
+    "web3": "1.3.4",
+    "winston": "^3.3.3"
+  }
+}
